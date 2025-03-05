@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos de Desarrollo Web</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      background-color: #2C3E50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 45%;
+      margin-bottom: 20px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #2C3E50;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    code {
+      background-color: #f4f4f4;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #2C3E50;
+      color: white;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    .btn {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fundamentos de Desarrollo Web</h1>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>¿Qué es HTML y cuál es su función principal?</h2>
+      <p>HTML (HyperText Markup Language) es el lenguaje utilizado para estructurar el contenido de una página web. Su función principal es organizar elementos como encabezados, párrafos, imágenes y enlaces.</p>
+    </div>
+
+    <div class="card">
+      <h2>¿Qué son las etiquetas HTML y cómo se utilizan?</h2>
+      <p>Las etiquetas HTML estructuran el contenido de una página. Se escriben con una apertura <code>&lt;etiqueta&gt;</code> y un cierre <code>&lt;/etiqueta&gt;</code>.</p>
+    </div>
+
+    <div class="card">
+      <h2>Ejemplos de etiquetas HTML comunes</h2>
+      <ul>
+        <li><code>&lt;p&gt;</code> - Párrafo</li>
+        <li><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> - Encabezados</li>
+        <li><code>&lt;a href="url"&gt;</code> - Enlace</li>
+        <li><code>&lt;img src="imagen.jpg"&gt;</code> - Imagen</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>¿Qué es CSS y cómo se utiliza?</h2>
+      <p>CSS (Cascading Style Sheets) es un lenguaje que permite personalizar el diseño de una página web, como los colores, las fuentes y las posiciones.</p>
+      <p><strong>Ejemplo de CSS:</strong></p>
+      <pre><code>body { background-color: #f4f4f4; color: #333; }</code></pre>
+    </div>
+
+    <div class="card">
+      <h2>¿Qué es el modelo de caja (box model)?</h2>
+      <p>El modelo de caja define cómo los elementos se estructuran en la web. Sus partes son:</p>
+      <ul>
+        <li><strong>Contenido:</strong> Área donde se muestra el texto o imágenes.</li>
+        <li><strong>Padding:</strong> Espacio interno alrededor del contenido.</li>
+        <li><strong>Border:</strong> Borde del elemento.</li>
+        <li><strong>Margin:</strong> Espacio externo alrededor del borde.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>¿Qué es el diseño responsivo?</h2>
+      <p>El diseño responsivo adapta la página a diferentes pantallas utilizando <code>@media queries</code> y unidades relativas.</p>
+    </div>
+
+    <div class="card">
+      <h2>¿Qué es JavaScript?</h2>
+      <p>JavaScript es un lenguaje de programación que permite agregar interactividad a las páginas web.</p>
+      <p><strong>Ejemplo de interacción con JavaScript:</strong></p>
+      <pre><code>document.getElementById("demo").innerHTML = "Texto cambiado";</code></pre>
+    </div>
+
+    <div class="card">
+      <h2>¿Qué es Git y por qué es importante?</h2>
+      <p>Git es un sistema de control de versiones que permite rastrear cambios y colaborar en proyectos de desarrollo web.</p>
+      <p><strong>Comandos básicos de Git:</strong></p>
+      <ul>
+        <li><code>git init</code> - Inicializa un repositorio.</li>
+        <li><code>git add .</code> - Agrega cambios.</li>
+        <li><code>git commit -m "Mensaje"</code> - Guarda cambios.</li>
+        <li><code>git push origin main</code> - Sube cambios al repositorio remoto.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>¿Qué es GitHub?</h2>
+      <p>GitHub es una plataforma que permite almacenar repositorios Git en la nube y facilita la colaboración en proyectos web.</p>
+    </div>
+
+    <!-- Botón de redirección -->
+    <div class="container" style="justify-content: center;">
+      <a href="../index.html" class="btn">Ir a la página principal</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Desarrollo Web | Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
